@@ -41,4 +41,16 @@ public sealed class Predictor
 
         return PromptType.Normal;
     }
+
+    public (PromptType Type, float Score) PredictWithScore(string text, int count = 50, float maxDistance = 0.2f)
+    {
+        var encoded = _encoder.Encode([text])[0];
+        var closest = _graph.KNNSearch(new EncodedPrompt(encoded, PromptType.Normal), count);
+        var best = closest.OrderBy(kv => kv.Distance).First();
+
+        if (best.Distance < maxDistance) return (best.Item.PromptType, best.Distance);
+
+        return (PromptType.Normal, best.Distance);
+    }
+
 }
