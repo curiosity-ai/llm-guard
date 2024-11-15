@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLM.Guard", "LLM.Guard\LLM.Guard.csproj", "{77B09D59-024B-4834-92E8-6B3DB377488E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLM.Guard.Prepare", "LLM.Guard.Prepare\LLM.Guard.Prepare.csproj", "{6329867E-8545-489C-A23B-3170A3A11088}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLM.Guard.Tests", "LLM.Guard.Tests\LLM.Guard.Tests.csproj", "{DE1BE7FC-D7EF-4205-A798-F8A386B28C4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77B09D59-024B-4834-92E8-6B3DB377488E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B09D59-024B-4834-92E8-6B3DB377488E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B09D59-024B-4834-92E8-6B3DB377488E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B09D59-024B-4834-92E8-6B3DB377488E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6329867E-8545-489C-A23B-3170A3A11088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6329867E-8545-489C-A23B-3170A3A11088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6329867E-8545-489C-A23B-3170A3A11088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6329867E-8545-489C-A23B-3170A3A11088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE1BE7FC-D7EF-4205-A798-F8A386B28C4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE1BE7FC-D7EF-4205-A798-F8A386B28C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE1BE7FC-D7EF-4205-A798-F8A386B28C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE1BE7FC-D7EF-4205-A798-F8A386B28C4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\*.*" Visible="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HNSW" Version="24.9.52330" />
+    <PackageReference Include="SentenceTransformers.ArcticXs" Version="24.9.52194" />
+  </ItemGroup>
+</Project>
