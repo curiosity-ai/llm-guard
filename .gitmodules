@@ -1,0 +1,3 @@
+[submodule "LLM.Guard.Prepare/data/jailbreak_llms"]
+	path = LLM.Guard.Prepare/data/jailbreak_llms
+	url = https://github.com/verazuo/jailbreak_llms
