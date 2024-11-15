@@ -1,7 +1,7 @@
 ﻿namespace LLM.Guard.Tests;
 
 [TestClass]
-public sealed class Test1
+public sealed class Test
 {
     [TestMethod]
     public void TestPredictions()

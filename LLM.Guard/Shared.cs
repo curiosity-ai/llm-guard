@@ -28,6 +28,8 @@ public enum PromptType
     ForbiddenQuestion_Gov_Decision,
 }
 
+public record struct Prediction(PromptType Type, float Score);
+
 public static class DistanceHelper
 {
     public static float EncodedPromptDistance(EncodedPrompt a, EncodedPrompt b)

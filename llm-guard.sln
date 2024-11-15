@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLM.Guard.Prepare", "LLM.Gu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLM.Guard.Tests", "LLM.Guard.Tests\LLM.Guard.Tests.csproj", "{DE1BE7FC-D7EF-4205-A798-F8A386B28C4F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "devops", "devops", "{CD6461B6-9138-4742-9C5F-A1F22E9EC8C8}"
+	ProjectSection(SolutionItems) = preProject
+		devops\azure-pipelines.yml = devops\azure-pipelines.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
