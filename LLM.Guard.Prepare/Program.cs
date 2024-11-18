@@ -18,6 +18,7 @@ Console.WriteLine(outputPath);
 var simpleJailbreakPrompts = File.ReadAllLines(simpleJailbreakPromptsPath)
     .Select(f => new Prompt(f.Trim('"', '\n', ' ', '\r'), true))
     .DistinctBy(q => q.prompt)
+    .Where(q => !string.IsNullOrWhiteSpace(q.prompt) && q.prompt.Length > 10)
     .ToArray();
 
 Console.WriteLine($"Read {simpleJailbreakPrompts.Length:n0} simple jailbreak prompts");
@@ -33,6 +34,7 @@ var forbiddenQuestions = Directory.GetFiles(forbiddenQuestionsPath, "*.csv")
         }
     })
     .DistinctBy(q => q.question)
+    .Where(q => !string.IsNullOrWhiteSpace(q.question) && q.question.Length > 10)
     .ToArray();
 
 Console.WriteLine($"Read {forbiddenQuestions.Length:n0} forbidden questions");
@@ -48,6 +50,7 @@ Console.WriteLine($"Read {forbiddenQuestions.Length:n0} forbidden questions");
 //        }
 //    })
 //    .DistinctBy(q => q.prompt)
+//    .Where(q => !string.IsNullOrWhiteSpace(q.prompt) && q.prompt.Length > 10)
 //    .ToArray();
 
 //Console.WriteLine($"Read {jailbreakPrompts.Length:n0} jailbreak prompts");
@@ -63,6 +66,7 @@ var normalPrompts = Directory.GetFiles(promptsPath, "regular*.csv")
         }
     })
     .DistinctBy(q => q.prompt)
+    .Where(q => !string.IsNullOrWhiteSpace(q.prompt) && q.prompt.Length > 10)
     .ToArray();
 
 Console.WriteLine($"Read {normalPrompts.Length:n0} normal prompts");
